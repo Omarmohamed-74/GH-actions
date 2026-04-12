@@ -1,7 +1,7 @@
 name: first workflow
 on:
   repository_dispatch:
-  types: [test]
+    types: [test]
 
   push:
     branches:

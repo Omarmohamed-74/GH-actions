@@ -5,9 +5,9 @@ on:
       - "main"
 jobs:
   first-workflow-job:
-  name: first job
-  runs-on: ubuntu-latest
-  steps:
-    - name: run bash command
-      run: echo "first workflow"
-      shell: bash
+    name: first job
+    runs-on: ubuntu-latest
+    steps:
+      - name: run bash command
+        run: echo "first workflow"
+        shell: bash

@@ -7,16 +7,15 @@ on:
 
 jobs:
   the_first_job:
-      runs-on: ubuntu-latest
-      steps:
-        - name: checkout-repository
-          uses: actions/checkout@v4
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout-repository
+        uses: actions/checkout@v4
 
-        - name: command
-          run: echo "the first workflow"
-          shell: bash
-
-        - name: run mvn
-          run: mvn clean package
-          shell: bash
+      - name: command
+        run: echo "the first workflow"
+        shell: bash
+      - name: run mvn
+        run: mvn clean package
+        shell: bash
 

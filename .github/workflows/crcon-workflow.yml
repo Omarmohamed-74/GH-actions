@@ -1,12 +1,22 @@
-name: cron workflow
+name: ass-workflow
 
 on:
-  schedule:
-    - cron: "0/5 * * * *"
-    - cron: "0/20 1 * * *"
-    
+  push:
+    branches:
+      - "main"
+
 jobs:
-  cron-workflow:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "cron workflow"
+  the_first_job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout-repository
+          uses: actions/checkout@v4
+
+        - name: command
+          run: echo "the first workflow"
+          shell: bash
+
+        - name: run mvn
+          run: mvn clean package
+          shell: bash
+

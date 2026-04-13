@@ -8,9 +8,14 @@ on:
   # repository_dispatch:
   #   types: [test]
 
-  # push:
-  #   branches:
-  #     - "main"
+  push:
+    branches:
+      - "main"
+    paths:
+      - "feat/**"
+  pull_request:
+    branches-ignore:
+    -"feature/**"
 jobs:
   first-workflow-job:
     name: first job

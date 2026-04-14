@@ -9,10 +9,10 @@ on:
   #   types: [test]
 
   push:
-    branches:
-      - "main"
-    paths:
-      - "feat/**"
+    # branches:
+    #   - "main"
+    # paths:
+    #   - "feat/**"
   # pull_request:
   #   branches-ignore:
   #   -"feature/**"

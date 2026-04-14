@@ -21,7 +21,7 @@ jobs:
     name: first job
     runs-on: ubuntu-latest
     container:
-      image: node14.16
+      image: node
     steps:
       - name: check node version
         run: node -v
